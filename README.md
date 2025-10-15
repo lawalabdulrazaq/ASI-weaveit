@@ -28,43 +28,16 @@ It unites **Fetch.ai’s uAgents**, **SingularityNET’s MeTTa Knowledge Graph**
 
 ## 🧠 Architecture
 
-```
+```markdown
+```mermaid
+flowchart TD
+    A[ASI:One Chat<br/>(User sends natural query)]
+    B[WeaveItAgent (uAgent)<br/>- NLP & Intent Detection<br/>- Calls MeTTa for context]
+    C[MeTTa Knowledge Graph<br/>- Retrieves structured knowledge & reasoning]
+    D[WeaveIt AI Video Engine<br/>- Converts text → video<br/>- Stores to IPFS/S3<br/>- Returns public link]
+    E[ASI Output Response<br/>🎥 Watch your tutorial at weaveit.ai/watch/xyz]
 
-+----------------------------+
-|        ASI:One Chat        |
-| (User sends natural query) |
-+-------------+--------------+
-|
-v
-+----------------------------+
-|      WeaveItAgent (uAgent) |
-|  - NLP & Intent Detection  |
-|  - Calls MeTTa for context |
-+-------------+--------------+
-|
-v
-+----------------------------+
-|   MeTTa Knowledge Graph    |
-|  - Retrieves structured    |
-|    knowledge & reasoning   |
-+-------------+--------------+
-|
-v
-+----------------------------+
-|   WeaveIt AI Video Engine  |
-|  - Converts text → video   |
-|  - Stores to IPFS/S3       |
-|  - Returns public link     |
-+-------------+--------------+
-|
-v
-+----------------------------+
-|   ASI Output Response      |
-| “🎥 Watch your tutorial at  |
-|   weaveit.ai/watch/xyz”    |
-+----------------------------+
-
-````
+    A --> B --> C --> D --> E
 
 ---
 
@@ -193,8 +166,8 @@ The demo shows:
 ## 👤 Author
 
 **Lawal Abdulrazaq Temitope**
-Founder, [WeaveIt](https://x.com/weaveItAgent)
-Twitter: [@lawalthewise](https://x.com/Loganthewise)
+Founder, [WeaveItAgent](https://x.com/weaveItAgent)
+Twitter: [@loganthewise](https://x.com/Loganthewise)
 Email: [contact@weaveit.ai](mailto:temitopelawal925@gmail.com)
 
 ```
